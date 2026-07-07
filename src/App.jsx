@@ -51,8 +51,6 @@ function App() {
 
   const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cartItems.reduce((sum, item) => sum + item.subtotal, 0);
-  const featuredProduct = products[0];
-  const minPrice = Math.min(...products.map((product) => product.price));
   const filteredProducts =
     activeCategory === "all"
       ? products
@@ -150,15 +148,6 @@ function App() {
             </div>
           </div>
 
-          <div className="hero-showcase" aria-label="Популярная позиция">
-            <div className="showcase-meta">
-              <span>от {formatPrice(minPrice)}</span>
-              <span>{products.length} позиций</span>
-            </div>
-            <img src={assetUrl(featuredProduct.image)} alt={featuredProduct.title} />
-            <strong>{featuredProduct.title}</strong>
-            <p>{featuredProduct.size}</p>
-          </div>
         </div>
 
         <div className="contact-card" aria-label="Контакты">
