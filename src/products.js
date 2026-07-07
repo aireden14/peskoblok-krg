@@ -18,7 +18,7 @@ export const products = [
     title: "Стеновой серый",
     price: 550,
     size: "20 x 20 x 40 см",
-    image: "products-generated/ballast-wall-gray.webp",
+    image: "products/ballast-wall-gray.webp",
   },
   {
     id: "ballast-wall-color",
@@ -27,7 +27,7 @@ export const products = [
     title: "Стеновой цветной",
     price: 650,
     size: "20 x 20 x 40 см",
-    image: "products-generated/ballast-wall-color.webp",
+    image: "products/ballast-wall-color.webp",
   },
   {
     id: "ballast-wall-torn-gray",
@@ -36,7 +36,7 @@ export const products = [
     title: "Стеновой рваный серый",
     price: 650,
     size: "20 x 20 x 40 см",
-    image: "products-generated/ballast-wall-torn-gray.webp",
+    image: "products/ballast-wall-torn-gray.webp",
   },
   {
     id: "ballast-wall-torn-color",
@@ -45,7 +45,7 @@ export const products = [
     title: "Стеновой рваный цветной",
     price: 750,
     size: "20 x 20 x 40 см",
-    image: "products-generated/ballast-wall-torn-color.webp",
+    image: "products/ballast-wall-torn-color.webp",
   },
   {
     id: "ballast-partition-gray",
@@ -54,7 +54,7 @@ export const products = [
     title: "Перегородочный серый",
     price: 450,
     size: "12 x 20 x 40 см",
-    image: "products-generated/ballast-partition-gray.webp",
+    image: "products/ballast-partition-gray.webp",
   },
   {
     id: "ballast-partition-color",
@@ -63,7 +63,7 @@ export const products = [
     title: "Перегородочный цветной",
     price: 550,
     size: "12 x 20 x 40 см",
-    image: "products-generated/ballast-partition-color.webp",
+    image: "products/ballast-partition-color.webp",
   },
   {
     id: "ballast-partition-torn-gray",
@@ -72,7 +72,7 @@ export const products = [
     title: "Перегородочный рваный серый",
     price: 500,
     size: "9 x 20 x 40 см",
-    image: "products-generated/ballast-partition-torn-gray.webp",
+    image: "products/ballast-partition-torn-gray.webp",
   },
   {
     id: "ballast-partition-torn-color",
@@ -81,7 +81,7 @@ export const products = [
     title: "Перегородочный рваный цветной",
     price: 600,
     size: "9 x 20 x 40 см",
-    image: "products-generated/ballast-partition-torn-color.webp",
+    image: "products/ballast-partition-torn-color.webp",
   },
   {
     id: "ballast-column-gray",
@@ -90,7 +90,7 @@ export const products = [
     title: "Тумба колонна серый",
     price: 1400,
     size: "32 x 32 x 20 см",
-    image: "products-generated/ballast-column-gray.webp",
+    image: "products/ballast-column-gray.webp",
   },
   {
     id: "ballast-column-color",
@@ -99,7 +99,7 @@ export const products = [
     title: "Тумба колонна цветной",
     price: 1500,
     size: "32 x 32 x 20 см",
-    image: "products-generated/ballast-column-color.webp",
+    image: "products/ballast-column-color.webp",
   },
   {
     id: "ballast-parapet-gray",
@@ -108,7 +108,7 @@ export const products = [
     title: "Парапет метровый серый",
     price: 4000,
     size: "100 x 21 см",
-    image: "products-generated/ballast-parapet-gray.webp",
+    image: "products/ballast-parapet-gray.webp",
   },
   {
     id: "ballast-cap-gray",
@@ -117,7 +117,7 @@ export const products = [
     title: "Шляпа на тумбы серый",
     price: 4000,
     size: "41 x 41 см",
-    image: "products-generated/ballast-cap-gray.webp",
+    image: "products/ballast-cap-gray.webp",
   },
   {
     id: "otsev-wall-gray",
@@ -126,7 +126,7 @@ export const products = [
     title: "Стеновой серый",
     price: 400,
     size: "20 x 20 x 40 см",
-    image: "products-generated/otsev-wall-gray.webp",
+    image: "products/otsev-wall-gray.webp",
   },
   {
     id: "otsev-wall-color",
@@ -135,7 +135,7 @@ export const products = [
     title: "Стеновой цветной",
     price: 500,
     size: "20 x 20 x 40 см",
-    image: "products-generated/otsev-wall-color.webp",
+    image: "products/otsev-wall-color.webp",
   },
   {
     id: "otsev-wall-torn-gray",
@@ -144,7 +144,7 @@ export const products = [
     title: "Стеновой рваный серый",
     price: 500,
     size: "20 x 20 x 40 см",
-    image: "products-generated/otsev-wall-torn-gray.webp",
+    image: "products/otsev-wall-torn-gray.webp",
   },
   {
     id: "otsev-wall-torn-color",
@@ -153,7 +153,7 @@ export const products = [
     title: "Стеновой рваный цветной",
     price: 600,
     size: "20 x 20 x 40 см",
-    image: "products-generated/otsev-wall-torn-color.webp",
+    image: "products/otsev-wall-torn-color.webp",
   },
   {
     id: "otsev-partition-gray",
@@ -162,6 +162,6 @@ export const products = [
     title: "Перегородочный серый",
     price: 350,
     size: "12 x 20 x 40 см",
-    image: "products-generated/otsev-partition-gray.webp",
+    image: "products/otsev-partition-gray.webp",
   },
 ];
