@@ -143,18 +143,18 @@ def main():
     BRAND.mkdir(parents=True, exist_ok=True)
 
     ballast_rows = [
-        ("ballast-wall-gray", (338, 205, 558, 258)),
-        ("ballast-wall-color", (334, 268, 558, 318)),
-        ("ballast-wall-torn-gray", (338, 333, 558, 383)),
-        ("ballast-wall-torn-color", (334, 394, 558, 446)),
-        ("ballast-partition-gray", (338, 460, 558, 512)),
-        ("ballast-partition-color", (334, 524, 558, 575)),
-        ("ballast-partition-torn-gray", (338, 587, 558, 638)),
-        ("ballast-partition-torn-color", (334, 651, 558, 702)),
-        ("ballast-column-gray", (338, 700, 558, 742)),
-        ("ballast-column-color", (334, 752, 558, 795)),
-        ("ballast-parapet-gray", (338, 805, 558, 848)),
-        ("ballast-cap-gray", (338, 856, 558, 897)),
+        ("ballast-wall-gray", (394, 198, 496, 253)),
+        ("ballast-wall-color", (330, 265, 555, 320)),
+        ("ballast-wall-torn-gray", (400, 332, 483, 384)),
+        ("ballast-wall-torn-color", (332, 392, 555, 448)),
+        ("ballast-partition-gray", (402, 458, 484, 511)),
+        ("ballast-partition-color", (336, 526, 552, 575)),
+        ("ballast-partition-torn-gray", (405, 587, 480, 637)),
+        ("ballast-partition-torn-color", (336, 648, 552, 692)),
+        ("ballast-column-gray", (407, 696, 479, 743)),
+        ("ballast-column-color", (336, 748, 548, 797)),
+        ("ballast-parapet-gray", (386, 804, 508, 850)),
+        ("ballast-cap-gray", (392, 854, 508, 898)),
     ]
     for slug, box in ballast_rows:
         crop_product("price-ballast.jpg", slug, box)

@@ -51,6 +51,8 @@ function App() {
 
   const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cartItems.reduce((sum, item) => sum + item.subtotal, 0);
+  const featuredProduct = products[0];
+  const minPrice = Math.min(...products.map((product) => product.price));
   const filteredProducts =
     activeCategory === "all"
       ? products
@@ -136,17 +138,37 @@ function App() {
               Выберите позиции, количество пересчитается сразу. Заказ отправится в WhatsApp
               готовым списком.
             </p>
+            <div className="hero-actions">
+              <a className="primary-link" href="#catalog">
+                <ShoppingCart size={18} />
+                Выбрать блоки
+              </a>
+              <a className="secondary-link" href={whatsappDirectUrl}>
+                <MessageCircle size={18} />
+                WhatsApp
+              </a>
+            </div>
           </div>
 
-          <div className="contact-card" aria-label="Контакты">
-            <div className="contact-row">
-              <Phone size={18} />
-              <a href={whatsappDirectUrl}>{phoneDisplay}</a>
+          <div className="hero-showcase" aria-label="Популярная позиция">
+            <div className="showcase-meta">
+              <span>от {formatPrice(minPrice)}</span>
+              <span>{products.length} позиций</span>
             </div>
-            <div className="contact-row">
-              <MapPin size={18} />
-              <span>{address}</span>
-            </div>
+            <img src={assetUrl(featuredProduct.image)} alt={featuredProduct.title} />
+            <strong>{featuredProduct.title}</strong>
+            <p>{featuredProduct.size}</p>
+          </div>
+        </div>
+
+        <div className="contact-card" aria-label="Контакты">
+          <div className="contact-row">
+            <Phone size={18} />
+            <a href={whatsappDirectUrl}>{phoneDisplay}</a>
+          </div>
+          <div className="contact-row">
+            <MapPin size={18} />
+            <span>{address}</span>
           </div>
         </div>
 
@@ -166,13 +188,18 @@ function App() {
         </div>
       </section>
 
-      <section className="catalog" aria-label="Каталог">
+      <section className="catalog" id="catalog" aria-label="Каталог">
         <div className="catalog-head">
           <div>
             <p className="section-kicker">Каталог</p>
             <h2>Цены за 1 штуку</h2>
           </div>
-          <button className="cart-chip" type="button" onClick={() => setCartOpen(true)}>
+          <button
+            className="cart-chip"
+            type="button"
+            onClick={() => setCartOpen(true)}
+            aria-label="Открыть корзину"
+          >
             <ShoppingCart size={18} />
             {totalQuantity}
           </button>
@@ -239,7 +266,7 @@ function ProductCard({ product, quantity, onChangeQuantity }) {
   return (
     <article className="product-card">
       <div className="product-media">
-        <img src={assetUrl(product.image)} alt={product.title} loading="lazy" />
+        <img src={assetUrl(product.image)} alt={product.title} />
       </div>
       <div className="product-info">
         <div className="product-meta">
