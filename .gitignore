@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+mobile-*.png
+tools/output/
+.env
+.env.*
+!.env.example
